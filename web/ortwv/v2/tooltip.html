@@ -1,0 +1,85 @@
+<script type="text/javascript" src="js/jq1.js"></script>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<script>
+
+$(document).ready(function() {
+
+	//grab all the anchor tag with rel set to shareit
+	$('a[rel=shareit], #shareit-box').mouseenter(function() {		
+		
+		//get the height, top and calculate the left value for the sharebox
+		var height = $(this).height();
+		var top = $(this).offset().top;
+		
+		//get the left and find the center value
+		var left = $(this).offset().left + ($(this).width() /2) - ($('#shareit-box').width() / 2);		
+		
+		//grab the href value and explode the bar symbol to grab the url and title
+		//the content should be in this format url|title
+		var value = $(this).attr('href').split('|');
+		
+		//assign the value to variables and encode it to url friendly
+		var field = value[0];
+		var url = encodeURIComponent(value[0]);
+		var title = encodeURIComponent(value[1]);
+		
+		//assign the height for the header, so that the link is cover
+		$('#shareit-header').height(height);
+		
+		//display the box
+		$('#shareit-box').show();
+		
+		//set the position, the box should appear under the link and centered
+		$('#shareit-box').css({'top':top, 'left':left});
+		
+		//assign the url to the textfield
+		$('#shareit-field').val(field);
+		
+		//make the bookmark media open in new tab/window
+		$('a.shareit-sm').attr('target','_blank');
+		
+		//Setup the bookmark media url and title
+		$('a[rel=shareit-mail]').attr('href', 'http://mailto:?subject=' + title);
+		$('a[rel=shareit-delicious]').attr('href', 'http://del.icio.us/post?v=4&amp;noui&amp;jump=close&amp;url=' + url + '&title=' + title);
+		$('a[rel=shareit-designfloat]').attr('href', 'http://www.designfloat.com/submit.php?url='  + url + '&amp;title=' + title);
+		$('a[rel=shareit-digg]').attr('href', 'http://digg.com/submit?phase=2&amp;url=' + url + '&amp;title=' + title);
+		$('a[rel=shareit-stumbleupon]').attr('href', 'http://www.stumbleupon.com/submit?url=' + url + '&title=' + title);
+		$('a[rel=shareit-twitter]').attr('href', 'http://twitter.com/home?status=' + title + '%20-%20' + title);
+		
+	});
+
+	//onmouse out hide the shareit box
+	$('#shareit-box').mouseleave(function () {
+		$('#shareit-field').val('');
+		$(this).hide();
+	});
+	
+	//hightlight the textfield on click event
+	$('#shareit-field').click(function () {
+		$(this).select();
+	});
+});
+
+</script>
+
+</head>
+
+<body>
+<div align="center">
+<a href="http://www.queness.com/|Queness - jQuery resources" rel="shareit">I'm the supporter!</a>
+</div>
+<div id="shareit-box">
+
+	<div id="shareit-header"></div>
+	<div id="shareit-body">
+    	<div class="logged-tab-div">
+            <table border="0" cellpadding="0" cellspacing="0" width="115px;">
+                <tr>
+                    <td>sd</td>
+                </tr>
+            </table>
+		</div>	
+	</div>
+</div>
+</body>
+</html>
