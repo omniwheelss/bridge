@@ -1,0 +1,180 @@
+		*{
+			margin:0;
+			padding:0;
+			list-style:none;
+			font-size:12px;
+		}
+		body{
+			font-family:Verdana,Arial,Sans-Serif;
+			font-size:12px;
+			text-align:left;
+		}
+		
+		div.domtab{
+			width:98%;
+			font-size:12px;
+			text-align:left;
+		}
+		ul.domtabs{
+			float:left;
+			font-size:12px;
+			width:100%;
+			margin:4px 0 0 0;
+			list-style-type:none;
+			text-align:left;
+		}
+		ul.domtabs li{
+			border:0px;
+			float:left;
+			padding:0 .2em 0 0;
+			font-size:12px;
+			text-align:left;
+		}
+		ul.domtabs a:link,
+		ul.domtabs a:visited,
+		ul.domtabs a:active,
+		ul.domtabs a:hover{
+			width:7em;
+			font-size:12px;
+			padding:.2em 1em;
+			display:block;
+			background:#B7B7B7;
+			color:#333;
+			height:1.6em;
+			font-weight:bold;
+			text-decoration:none;
+			text-align:left;
+		}
+		ul.domtabs a:hover{
+			background:#E6E6E6;
+			text-align:left;
+		}
+		div.domtab div{
+			clear:both;
+			width:auto;
+			background:#E6E6E6;
+			border-top:solid 1px #FFFFFF;
+			color:#fff;
+			font-size:12px;
+			padding:0.2em 0.2em;
+			text-align:left;
+		}
+		ul.domtabs li.active a:link,
+		ul.domtabs li.active a:visited,
+		ul.domtabs li.active a:active,
+		ul.domtabs li.active a:hover{
+			background:#E6E6E6;
+			border-top:solid 1px #FFFFFF;
+			font-size:12px;
+			color:#333;
+			text-align:left;
+		}
+		#domtabprintview{
+			float:right;
+			padding-right:1em;
+			text-align:right;
+		}
+		#domtabprintview a:link,
+		#domtabprintview a:visited,
+		#domtabprintview a:active,
+		#domtabprintview a:hover{
+			color:#333;
+			text-align:left;
+		}
+		p{
+			margin:0 0 .5em 0;
+			line-height:1.3em;
+			text-align:left;
+		}
+		h2{
+			font-size:1.3em;
+			color:#cfc;
+			text-transform:uppercase;
+			font-family:"Trebuchet MS",Arial,Sans-Serif;
+			padding:0 0 .7em .2em;
+			text-align:left;
+		}
+		h1{
+			font-size:2em;
+			text-align:center;
+			font-weight:normal;
+			text-transform:uppercase;
+			font-family:"Trebuchet MS",Arial,Sans-Serif;
+			padding:.5em 0;
+			background:#000;
+			text-align:left;
+			border-bottom:1px solid #666;
+		}
+		pre{
+			font-size:1.2em;
+			padding:1em;
+			text-align:left;
+		}
+		div.domtab div a:link,
+		div.domtab div a:visited,
+		div.domtab div a:active
+		{
+			color:#333;
+			display:block;
+			padding:.5em .5em;
+			text-decoration:none;
+			font-weight:normal;
+			font-size:1em;
+			text-align:left;
+		}
+		div.domtab div h2 a,
+		div.domtab div h2 a:hover,
+		div.domtab div h2 a:active
+		{
+			color:#cfc;
+			display:inline;
+			padding:0;
+			font-weight:normal;
+			font-size:1em;
+		}
+		
+/* other scheme! */
+#other{
+	font-size:.8em;
+	margin-left:.3em;
+	width:60em;
+	margin-bottom:3em;
+	float:left;
+}
+div#other.domtab div{
+	clear:both;
+	width:54em;
+	background:#669;
+	color:#fff;
+	padding:1em 3em;
+}
+		
+#other ul.domtabs a:hover{
+	background:#669;
+}
+div#other ul.domtabs li.active a:link,
+div#other ul.domtabs li.active a:visited,
+div#other ul.domtabs li.active a:active,
+div#other ul.domtabs li.active a:hover{
+	background:#669;
+	color:#fff;
+}
+#other div{
+	float:left;
+}
+ul.prevnext{
+	float:left;
+	width:100%;
+}
+ul.prevnext li{
+	float:left;
+	width:49%;
+}
+ul.prevnext li.next{
+	float:right;
+	text-align:right;
+}
+
+.top_sub_menu{
+	font-size:12px;
+}
