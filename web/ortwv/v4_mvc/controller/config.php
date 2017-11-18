@@ -17,14 +17,14 @@
 		// Website Login screen
 		const LOGIN_TITLE = "Codebase Silver Login Screen";
 		const APP_NAME = "Codebase Silver";
-		const LOGIN_FOOTER_TITLE = "All Rights Reserved. Codebase Silver- OnroadTrack. Privacy and Terms";
+		const LOGIN_FOOTER_TITLE = "All Rights Reserved. Codebase Silver- test. Privacy and Terms";
 		
 		// Website inner pages
 		const HOME_TITLE = "Codebase Silve Home Screen";
 		const HOME_FOOTER_TITLE = "Codebase Silver";
 		
 		// SEO Text
-		const WEBSITE_NAME = "onroadtrack.com";
+		const WEBSITE_NAME = "test.com";
 		
 	}
 ?>

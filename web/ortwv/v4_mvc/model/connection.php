@@ -6,8 +6,8 @@ DB Connection file to connect the database
 class Database
 {   
 	private $host = "localhost";
-	private $db_name = "agape_vts1";
-	private $username = "root";
+	private $db_name = "";
+	private $username = "";
 	private $password = "";
 	public $conn;
 
